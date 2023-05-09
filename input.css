@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap');
+.security{
+    min-height: 25vh;   
+    margin-top: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+}
+
+.security{
+
+}
+.securityContainer{
+
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+
+}
+.securityImageContainer{
+    width: 100%;
+}
+.securityImageContainer img{
+    width: 100%;
+    height: 500px;
+}
+
+.securityText{
+    width: 45%;
+}
+
+.securityText{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  
+
+@media screen and (max-width:1448px) {
+    .securityImageContainer img{
+        width: 100%;
+        height: auto
+    }
+    .securityContainer{
+        align-items: center;
+    }
+}
+@media screen and (max-width:1000px) {
+    .securityImageContainer{
+        flex-direction: column;
+        display: none;
+    }
+    .securityText{
+        width: 90%;
+    }
+    .programmingLanguages,.security, .projects, .aboutMe{
+        padding: 0px;
+    }
+}
+
+
+.languageContainer{
+    padding-top:50px 0; 
+    margin-top: 2rem;
+    width: 80%;
+}
+
+.projects{
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 10px;
+
+}
